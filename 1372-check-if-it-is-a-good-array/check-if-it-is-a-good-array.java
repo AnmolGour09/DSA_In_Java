@@ -2,7 +2,7 @@ class Solution {
     public boolean isGoodArray(int[] nums) {
         int n=nums.length;
         int res=nums[0];
-        for(int i=0;i<n;i++)
+        for(int i=1;i<n;i++)
         {
             res=gcd(res,nums[i]);
         }
