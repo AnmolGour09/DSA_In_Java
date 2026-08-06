@@ -14,13 +14,13 @@ class Solution {
             }
         }
         
-        if(o<e)
+        if(o>e)
         {
-            return o;
+            return e;
         }
         else
         {
-            return e;
+            return o;
         }
         
     }
