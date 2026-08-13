@@ -49,7 +49,6 @@ class Solution {
                 return mid;
             }
 
-            // Left half is sorted
             if (a[s] <= a[mid]) {
 
                 if (a[s] <= t && t < a[mid]) {
@@ -59,7 +58,6 @@ class Solution {
                 }
 
             }
-            // Right half is sorted
             else {
 
                 if (a[mid] < t && t <= a[e]) {
