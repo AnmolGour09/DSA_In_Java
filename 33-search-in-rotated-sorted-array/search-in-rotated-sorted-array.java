@@ -7,14 +7,7 @@ class Solution {
         { 
             return f;
         }
-        else
-        {
-            int s=binary2(a,t,p);
-            if(s!=-1)
-            {
-                return s;
-            }
-        }
+        
 
         return -1;        
     }
@@ -70,25 +63,5 @@ class Solution {
         return -1;
     }
 
-    public static int binary2(int[] a,int t, int p)
-    {
-        int s=p+1;
-        int e=a.length-1;
-        while(s<=e)
-        {
-            int mid=s+(e-s)/2;
-            if(a[mid]==t)
-            {
-                return mid;
-            }
-            else if(a[mid]<t)
-            {
-                s=mid+1;
-            }
-            else{
-                e=mid-1;
-            }
-        }
-        return -1;
-    }
+    
 }
