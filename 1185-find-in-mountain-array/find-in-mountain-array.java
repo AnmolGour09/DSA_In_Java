@@ -33,7 +33,7 @@ class Solution {
                 s=m+1;
             }
         }
-        return s;
+        return e;
     }
 
     public static int binarya(MountainArray a,int t, int p)
