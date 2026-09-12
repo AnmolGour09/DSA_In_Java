@@ -9,7 +9,7 @@ class Solution {
                 while(j>0)
                 {
                     c++;
-                    j-=(j&-j);
+                    j=j&(j-1);
                 }
             a[i]=c;
         }
