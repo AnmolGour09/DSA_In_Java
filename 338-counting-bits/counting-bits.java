@@ -8,11 +8,8 @@ class Solution {
 
                 while(j>0)
                 {
-                    if((j&1)==1)
-                    {
-                        c++;
-                    }
-                    j>>=1;
+                    c++;
+                    j-=(j&-j);
                 }
             a[i]=c;
         }
